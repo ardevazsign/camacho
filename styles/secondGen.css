@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    gap: 50px;
+    padding: 5px 0;
+    background-color: rgb(6, 58, 245);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+header a{
+    color: white;
+}
+img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.headTitle-firstGen{
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;  
+}
+.back{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    background-color:rgb(247, 238, 238) ;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+.back:hover{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    background-color:black ;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+/* Main start here*/
+.familyHead{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.spanMe{
+    margin-top: 15px;
+}
+.secondGen-banner{
+    border-radius: 20px;
+}
+.banner-title{
+    font-size: 24px;
+   
+}
+.secondGen-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.secondGen-parents{
+    display: flex;
+    gap: 10px;
+
+}
+.secondGen-children{
+    margin-top: 30px;
+    column-gap: 20px;
+   display: flex;
+}
+.secondGen-banner{
+    padding: 10px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.father,
+.mother{
+    box-shadow:-10px 8px 8px rgba(0,0,0,.5);
+    width: 165px;
+    height: 215px;
+    border-radius: 10px;
+}
+.father:hover,
+.mother:hover{ 
+    background-color: darkslategrey;
+    cursor: pointer;
+    color: #ffffff;
+}
+.child{
+    border-radius: 10px;
+    box-shadow:-10px 8px 8px rgba(0,0,0,.5);
+    width: 150px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.child:hover{
+    background-color: darkslategrey;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+.childName{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.addInfo{
+    text-align: center;
+}
+/* main start here */
+
+footer{
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 58, 245);
+   
+}
+footer  a {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+footer p{
+   color: white;
+}

@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+body {
+  background: #201e1e;
+}
+
+header {
+  gap: 50px;
+  padding: 10px 0;
+  background-color: rgb(6, 58, 245);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+header a {
+  color: white;
+}
+.headTitle {
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.headTitle-firstGen {
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+.back {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+}
+.back:hover {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+.container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.firstGen-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.firstGenChildName {
+  font-size: 20px;
+  text-align: center;
+}
+.grand-parents {
+  display: flex;
+  column-gap: 50px;
+}
+.grand {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  background: rgb(233, 231, 231);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grand-h3 {
+  font-size: 24px;
+}
+.grandFather {
+  cursor: pointer;
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+}
+.grandFather-firstGenPage {
+  background-color: blue;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 170px;
+  height: 220px;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+}
+.grandMother {
+  background-color: gray;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid whitesmoke;
+  box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.8);
+}
+.grandMother-firstGenPage {
+  cursor: pointer;
+  background-color: blue;
+  width: 170px;
+  height: 220px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.children {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.children-firstGenMainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 200px;
+}
+.child {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 35px;
+  background-color: chartreuse;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+  border: 0.4px solid whitesmoke;
+}
+.child:hover {
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: grey;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+  border: 1px solid whitesmoke;
+}
+
+.child a {
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+}
+.child a:hover {
+  color: whitesmoke;
+}
+.child-firstGenHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: gray;
+  width: 130px;
+  height: 160px;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+  border: 0.5px solid whitesmoke;
+}
+.in-law {
+  display: flex;
+  align-items: center;
+  color: antiquewhite;
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: royalblue;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+  border: 0.5px solid whitesmoke;
+}
+.in-law a {
+  color: white;
+  text-decoration: none;
+}
+.in-law a:hover {
+  color: black;
+}
+.in-law:hover {
+  background-color: grey;
+  width: 90px;
+  height: 90px;
+  color: black;
+  border-radius: 50%;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+  border: 0.5px solid whitesmoke;
+}
+.couple {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+.grand-children {
+  color: black;
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: greenyellow;
+  font-weight: 600;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+  border: 0.5px solid whitesmoke;
+}
+.grand-children a {
+  text-decoration: none;
+  color: #111111;
+  font-size: 12px;
+  font-weight: 700;
+}
+.grand-children:hover {
+  background-color: lightgray;
+  color: darkslategray;
+  font-weight: 600;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+  border: 0.5px solid whitesmoke;
+}
+.first a {
+  color: #ffffff;
+}
+.first {
+  background: crimson;
+}
+.second a {
+  font-size: 12px;
+  font-weight: 700;
+}
+.second {
+  background: rgb(247, 182, 3);
+}
+.third {
+  background: orangered;
+}
+.third a {
+  color: #ffffff;
+}
+.fourth {
+  background: aqua;
+}
+.fifth {
+  background: green;
+}
+.fifth a {
+  color: #ffffff;
+}
+.sixth {
+  background: blue;
+}
+.sixth a {
+  color: #ffffff;
+}
+.seventh {
+  background: navy;
+}
+.seventh a {
+  color: #ffffff;
+}
+.eighth {
+  background: yellow;
+}
+.ninth {
+  background: darkorange;
+}
+.ninth a {
+  color: #ffffff;
+}
+
+footer {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 58, 245);
+}
+footer a {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+footer p {
+  color: white;
+}
+
+/* CSS part 2 */
+.childrensFamily {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.gasilla-siblings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 350px;
+}
+.agor-siblings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 280px;
+}
+.rosales-siblings {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.camacho-siblings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 350px;
+  gap: 10px;
+}
+.pacamarra-siblings {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.umali-siblings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.bacani-siblings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 350px;
+}
+.saavedra-siblings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 250px;
+}
+.lazado-siblings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.familyName {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+/* Row */
+/* Row 1 = 2 gasilla & agor */
+.rowOne {
+  display: flex;
+}
+/* Row 2 = 3  rosales, camacho & pacamarra*/
+.rowTwo {
+  display: flex;
+  column-gap: 50px;
+}
+/* Row 3 = 4  umali, bacani, saavedra and lazado*/
+.rowThree {
+  display: flex;
+  column-gap: 80px;
+}
