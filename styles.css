@@ -6,12 +6,23 @@ img {
   border: 1px solid #ffffff;
   border-radius: 10px;
 }
+html,
 body {
+  height: 100%;
   background: #201e1e;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+  margin-bottom: 100px;
 }
 
 header {
+  position: fixed;
+  top: 0;
   gap: 50px;
+  width: 100%;
+  height: 40px;
   padding: 10px 0;
   background-color: rgb(6, 58, 245);
   justify-content: center;
@@ -52,7 +63,7 @@ header a {
   color: white;
 }
 .container {
-  padding: 10px;
+  padding: 100px 10px 50px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,7 +168,7 @@ header a {
   justify-content: center;
   width: 80px;
   height: 80px;
-  border-radius: 35px;
+  border-radius: 50%;
   background-color: chartreuse;
   box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
   border: 0.4px solid whitesmoke;
@@ -166,7 +177,7 @@ header a {
   color: white;
   width: 80px;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 50%;
   background-color: grey;
   box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
   border: 1px solid whitesmoke;
@@ -198,8 +209,8 @@ header a {
   text-align: center;
   justify-content: center;
   font-weight: 500;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: royalblue;
   box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
@@ -214,8 +225,8 @@ header a {
 }
 .in-law:hover {
   background-color: grey;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   color: black;
   border-radius: 50%;
   box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
@@ -224,6 +235,14 @@ header a {
 .couple {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+.coupleCamacho {
+  display: flex;
+  /* flex-direction: row-reverse; */
   align-items: center;
   justify-content: center;
   /* flex-direction: column; */
@@ -309,14 +328,18 @@ header a {
 .ninth a {
   color: #ffffff;
 }
-
-footer {
+.foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
   padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(6, 58, 245);
 }
+
 footer a {
   font-family: "Franklin Gothic Medium", sans-serif;
   color: black;
@@ -419,4 +442,12 @@ footer p {
 .rowThree {
   display: flex;
   column-gap: 80px;
+}
+
+/* first gen family css */
+
+.childHolder {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
