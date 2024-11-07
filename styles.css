@@ -15,6 +15,9 @@ body {
 .content {
   min-height: 100%;
   margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 header {
@@ -237,16 +240,13 @@ header a {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
-  gap: 10px;
+  column-gap: 15px;
 }
 .coupleCamacho {
   display: flex;
-  /* flex-direction: row-reverse; */
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
-  gap: 10px;
+  column-gap: 10px;
 }
 .grand-children {
   color: black;
@@ -376,6 +376,8 @@ footer p {
   width: 280px;
 }
 .rosales-siblings {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   width: 300px;
@@ -390,6 +392,8 @@ footer p {
 }
 .pacamarra-siblings {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   width: 300px;
 }
@@ -450,4 +454,269 @@ footer p {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+}
+@media screen and (max-width: 428px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+  }
+  .content {
+    overflow-x: hidden;
+  }
+  .grand-parents {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .grand {
+    padding: 15px;
+  }
+  .grand-h3 {
+    font-size: 20px;
+  }
+  .rowThree {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .rowTwo {
+    flex-direction: column;
+  }
+  .rowOne {
+    flex-direction: column;
+  }
+  footer a {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  footer p {
+    font-size: 12px;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 429px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding-top: 100px 0;
+    margin: 0;
+  }
+  .content {
+    overflow-x: hidden;
+  }
+  .grand {
+    padding: 15px;
+  }
+  img {
+    width: 90%;
+    height: 90%;
+  }
+  .grandMother-firstGenPage,
+  .grandFather-firstGenPage {
+    width: 150px;
+    height: 180px;
+  }
+  .grand-parents {
+    column-gap: 20px;
+  }
+  .grand-h3 {
+    font-size: 20px;
+  }
+  .grand-children {
+    width: 55px;
+    height: 55px;
+  }
+  .grand-children:hover {
+    width: 55px;
+    height: 55px;
+  }
+  .gasilla-siblings {
+    width: 300px;
+    gap: 10px;
+  }
+  .agor-siblings {
+    width: 200px;
+    gap: 10px;
+  }
+  .rosales-siblings {
+    width: 180px;
+    gap: 10px;
+  }
+  .camacho-siblings {
+    width: 180px;
+    gap: 10px;
+  }
+  .pacamarra-siblings {
+    gap: 10px;
+    width: 180px;
+  }
+  .umali-siblings {
+    width: 180px;
+    gap: 10px;
+  }
+  .bacani-siblings {
+    width: 180px;
+    gap: 10px;
+  }
+  .saavedra-siblings {
+    width: 180px;
+    gap: 10px;
+  }
+  .lazado-siblings {
+    width: 180px;
+    gap: 10px;
+  }
+
+  .familyName {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .child {
+    width: 70px;
+    height: 70px;
+  }
+  .child:hover {
+    width: 70px;
+    height: 70px;
+  }
+  .in-law {
+    width: 75px;
+    height: 75px;
+  }
+  .in-law:hover {
+    width: 75px;
+    height: 75px;
+  }
+  .in-law a {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+  }
+  .rowThree {
+    column-gap: 5px;
+  }
+  .rowTwo {
+    column-gap: 10px;
+  }
+  .rowOne {
+    column-gap: 40px;
+  }
+}
+
+/* desk top screen */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 100%;
+    padding-top: 100px 0;
+    margin: 0;
+  }
+  .content {
+    overflow-x: hidden;
+  }
+  .grand {
+    padding: 15px;
+  }
+  img {
+    width: 90%;
+    height: 90%;
+  }
+  .grandMother-firstGenPage,
+  .grandFather-firstGenPage {
+    width: 150px;
+    height: 180px;
+  }
+  .grand-parents {
+    column-gap: 20px;
+  }
+  .grand-h3 {
+    font-size: 20px;
+  }
+  .grand-children {
+    width: 55px;
+    height: 55px;
+  }
+  .grand-children:hover {
+    width: 55px;
+    height: 55px;
+  }
+  .gasilla-siblings {
+    width: 300px;
+    gap: 10px;
+  }
+  .agor-siblings {
+    width: 200px;
+    gap: 10px;
+  }
+  .rosales-siblings {
+    width: 280px;
+    gap: 10px;
+  }
+  .camacho-siblings {
+    width: 300px;
+    gap: 10px;
+  }
+  .pacamarra-siblings {
+    gap: 10px;
+    width: 280px;
+  }
+  .umali-siblings {
+    width: 300px;
+    gap: 10px;
+  }
+  .bacani-siblings {
+    width: 200px;
+    gap: 10px;
+  }
+  .saavedra-siblings {
+    width: 200px;
+    gap: 10px;
+  }
+  .lazado-siblings {
+    width: 280px;
+    gap: 10px;
+  }
+
+  .familyName {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .child {
+    width: 70px;
+    height: 70px;
+  }
+  .child:hover {
+    width: 70px;
+    height: 70px;
+  }
+  .in-law {
+    width: 75px;
+    height: 75px;
+  }
+  .in-law:hover {
+    width: 75px;
+    height: 75px;
+  }
+  .in-law a {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+  }
+  .rowThree {
+    column-gap: 10px;
+  }
+  .rowTwo {
+    column-gap: 20px;
+  }
+  .rowOne {
+    column-gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1158px) and (max-width: 1300px) {
+  header {
+    width: 100%;
+    background-color: blue;
+  }
 }
