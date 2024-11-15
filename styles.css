@@ -5,6 +5,27 @@
 img {
   border: 1px solid #ffffff;
   border-radius: 10px;
+  transition: 1s;
+}
+img:hover {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  transform: scale(1.3);
+  z-index: 2;
+}
+a .image-firstGenChild {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ffff;
+  transition: 1s;
+}
+a .image-firstGenChild:hover {
+  border-radius: 50%;
+  transform: scale(1.3);
+  z-index: 2;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.8);
+  border: 3px solid gold;
 }
 html,
 body {
@@ -74,14 +95,27 @@ header a {
   gap: 10px;
 }
 .firstGen-container {
-  padding: 40px;
+  background: hsl(196, 79%, 61%);
+  margin-top: 20px;
+  padding: 100px 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
+.firstGen-childHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.8);
+}
 .firstGenChildName {
+  margin-top: 10px;
   font-size: 20px;
   text-align: center;
 }
@@ -93,7 +127,17 @@ header a {
   padding: 30px;
   border-radius: 10px;
   text-align: center;
-  background: rgb(233, 231, 231);
+  background: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grandGrand {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  background: gold;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,7 +156,7 @@ header a {
   align-items: center;
   display: flex;
   border: 1px solid black;
-  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.8);
 }
 .grandFather-firstGenPage {
   background-color: blue;
@@ -124,7 +168,7 @@ header a {
   height: 220px;
   border-radius: 20px;
   border: 1px solid whitesmoke;
-  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.8);
 }
 .grandMother {
   background-color: gray;
@@ -147,7 +191,7 @@ header a {
   display: flex;
   border-radius: 20px;
   border: 1px solid whitesmoke;
-  box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 .children {
@@ -162,7 +206,7 @@ header a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 40px 200px;
+  padding: 50px 220px;
 }
 .child {
   font-weight: 600;
@@ -198,12 +242,12 @@ header a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  background: gray;
-  width: 130px;
-  height: 160px;
-  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
-  border: 0.5px solid whitesmoke;
+  border-radius: 50%;
+  background: gold;
+  border: 1px solid aliceblue;
+  width: 170px;
+  height: 170px;
+  box-shadow: -3px -3px 3px rgb(7, 235, 243), 3px 3px 3px rgb(8, 243, 243);
 }
 .in-law {
   display: flex;
@@ -367,6 +411,7 @@ footer p {
   justify-content: center;
   flex-wrap: wrap;
   width: 350px;
+  gap: 10px;
 }
 .agor-siblings {
   display: flex;
@@ -374,20 +419,22 @@ footer p {
   justify-content: center;
   flex-wrap: wrap;
   width: 280px;
+  gap: 10px;
 }
 .rosales-siblings {
   align-items: center;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  gap: 10px;
 }
 .camacho-siblings {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 350px;
+  width: 400px;
   gap: 10px;
 }
 .pacamarra-siblings {
@@ -395,7 +442,8 @@ footer p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 300px;
+  width: 350px;
+  gap: 10px;
 }
 .umali-siblings {
   display: flex;
@@ -403,6 +451,7 @@ footer p {
   justify-content: center;
   flex-wrap: wrap;
   width: 300px;
+  gap: 10px;
 }
 .bacani-siblings {
   display: flex;
@@ -410,20 +459,23 @@ footer p {
   justify-content: center;
   flex-wrap: wrap;
   width: 350px;
+  gap: 10px;
 }
 .saavedra-siblings {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 250px;
+  width: 400px;
+  gap: 10px;
 }
 .lazado-siblings {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 250px;
+  width: 350px;
+  gap: 10px;
 }
 
 .familyName {
@@ -465,6 +517,9 @@ footer p {
   .content {
     overflow-x: hidden;
   }
+  .firstGen-container {
+    background: hsl(196, 79%, 61%);
+  }
   .grand-parents {
     flex-direction: column;
     align-items: center;
@@ -488,11 +543,11 @@ footer p {
     flex-direction: column;
   }
   footer a {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
   }
   footer p {
-    font-size: 12px;
+    font-size: 10px;
     color: white;
   }
 }
@@ -509,15 +564,7 @@ footer p {
   .grand {
     padding: 15px;
   }
-  img {
-    width: 90%;
-    height: 90%;
-  }
-  .grandMother-firstGenPage,
-  .grandFather-firstGenPage {
-    width: 150px;
-    height: 180px;
-  }
+
   .grand-parents {
     column-gap: 20px;
   }
@@ -527,6 +574,14 @@ footer p {
   .grand-children {
     width: 55px;
     height: 55px;
+  }
+  .children-firstGenMainContainer {
+    padding: 50px 50px;
+  }
+  .grandMother-firstGenPage,
+  .grandFather-firstGenPage {
+    width: 150px;
+    height: 200px;
   }
   .grand-children:hover {
     width: 55px;
@@ -618,14 +673,13 @@ footer p {
   .grand {
     padding: 15px;
   }
-  img {
-    width: 90%;
-    height: 90%;
-  }
   .grandMother-firstGenPage,
   .grandFather-firstGenPage {
     width: 150px;
-    height: 180px;
+    height: 200px;
+  }
+  .children-firstGenMainContainer {
+    padding: 0px 0px;
   }
   .grand-parents {
     column-gap: 20px;
@@ -714,9 +768,21 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1158px) and (max-width: 1300px) {
+@media screen and (min-width: 1158px) and (max-width: 1299px) {
   header {
     width: 100%;
     background-color: blue;
+  }
+  .children-firstGenMainContainer {
+    padding: 50px 50px;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1610px) {
+  header {
+    width: 100%;
+    background-color: blue;
+  }
+  .children-firstGenMainContainer {
+    padding: 50px 100px;
   }
 }
