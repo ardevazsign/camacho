@@ -1,139 +1,234 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-header{
-    gap: 50px;
-    padding: 5px 0;
-    background-color: rgb(6, 58, 245);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
+header {
+  gap: 50px;
+  padding: 5px 0;
+  background-color: rgb(6, 58, 245);
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-header a{
-    color: white;
+header a {
+  color: white;
 }
-img{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.headTitle-firstGen{
-    font-weight: 700;
-    cursor: pointer;
-    color: white;
-    font-size: 18px;  
+.headTitle-firstGen {
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
 }
-.back{
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
-    background-color:rgb(247, 238, 238) ;
-    border-radius: 5px;
-    padding: 10px;
-    color: black;
+.back {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: rgb(247, 238, 238);
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
 }
-.back:hover{
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
-    background-color:black ;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
+.back:hover {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
 }
 
 /* Main start here*/
-.familyHead{
-    font-size: 18px;
-    margin-top: 20px;
+.familyHead {
+  font-size: 18px;
+  margin-top: 20px;
 }
-.spanMe{
-    margin-top: 15px;
+.spanMe {
+  margin-top: 15px;
 }
-.secondGen-banner{
-    border-radius: 20px;
+.secondGen-banner {
+  border-radius: 20px;
 }
-.banner-title{
-    font-size: 24px;
-   
+.banner-title {
+  font-size: 24px;
 }
-.secondGen-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
+.secondGen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
-.secondGen-parents{
-    display: flex;
-    gap: 10px;
-
+.secondGen-parents {
+  display: flex;
+  gap: 10px;
 }
-.secondGen-children{
-    margin-top: 30px;
-    column-gap: 20px;
-   display: flex;
+.secondGen-children {
+  margin-top: 30px;
+  column-gap: 20px;
+  display: flex;
 }
-.secondGen-banner{
-    padding: 10px;
-    text-align:center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.secondGen-banner {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .father,
-.mother{
-    box-shadow:-10px 8px 8px rgba(0,0,0,.5);
-    width: 165px;
-    height: 215px;
-    border-radius: 10px;
+.mother {
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.5);
+  width: 165px;
+  height: 215px;
+  border-radius: 10px;
 }
 .father:hover,
-.mother:hover{ 
-    background-color: darkslategrey;
-    cursor: pointer;
-    color: #ffffff;
+.mother:hover {
+  background-color: darkslategrey;
+  cursor: pointer;
+  color: #ffffff;
 }
-.child{
-    border-radius: 10px;
-    box-shadow:-10px 8px 8px rgba(0,0,0,.5);
-    width: 150px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.child {
+  border-radius: 10px;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.5);
+  width: 150px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
-.child:hover{
-    background-color: darkslategrey;
-    cursor: pointer;
-    color: #ffffff;
-
+.child:hover {
+  background-color: darkslategrey;
+  cursor: pointer;
+  color: #ffffff;
 }
-.childName{
-    text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.childName {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.addInfo{
-    text-align: center;
+.addInfo {
+  text-align: center;
 }
 /* main start here */
 
-footer{
-    padding: 5px 0;
+footer {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 58, 245);
+}
+footer a {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+footer p {
+  color: white;
+}
+
+/* footer */
+.foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 58, 245);
+}
+
+footer a {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+footer p {
+  color: white;
+}
+/* media screen */
+@media screen and (max-width: 428px) {
+  .secondGen-parents {
+    padding-top: 200px;
     display: flex;
+    gap: 20px;
+  }
+  .secondGen-parents {
+    position: relative;
+  }
+
+  .secondGen-banner {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 20px;
+  }
+
+  .secondGen-children {
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgb(6, 58, 245);
-   
+    margin-bottom: 50px;
+  }
 }
-footer  a {
-    font-family: 'Franklin Gothic Medium', sans-serif;
-    color: black;
-    font-size: 16px;
-    font-weight: 700;
+
+@media screen and (min-width: 429px) and (max-width: 767px) {
+  .secondGen-parents {
+    padding-top: 200px;
+    display: flex;
+    gap: 30px;
+  }
+  .secondGen-parents {
+    position: relative;
+  }
+
+  .secondGen-banner {
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 20px;
+  }
+
+  .secondGen-children {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 30px;
+  }
 }
-footer p{
-   color: white;
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .secondGen-parents {
+    padding-top: 200px;
+    display: flex;
+    gap: 40px;
+  }
+  .secondGen-parents {
+    position: relative;
+  }
+
+  .secondGen-banner {
+    position: absolute;
+    width: 400px;
+    top: 0;
+    left: -8%;
+  }
+
+  .secondGen-children {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 60px;
+  }
 }
