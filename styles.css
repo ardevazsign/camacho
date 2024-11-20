@@ -41,7 +41,7 @@ body {
 }
 .content {
   min-height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -93,7 +93,7 @@ header a {
   color: white;
 }
 .container {
-  padding: 100px 10px 50px 10px;
+  padding: 100px 10px 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -520,20 +520,49 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 100px;
   }
+
   .content {
     overflow-x: hidden;
   }
   .firstGen-container {
     background: hsl(196, 79%, 61%);
   }
+  /* responsive of top */
+  header {
+    z-index: 1000;
+  }
   .grand-parents {
-    flex-direction: column;
+    padding-top: 140px;
     align-items: center;
     justify-content: center;
-    row-gap: 20px;
+    position: relative;
+    padding-bottom: 280px;
   }
+  .grand {
+    position: absolute;
+    top: 0;
+    width: 280px;
+    height: 150px;
+  }
+  .grandGrand {
+    position: absolute;
+    top: 0;
+    width: 240px;
+  }
+  .grandFather-firstGenPage {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 5px;
+  }
+  .grandMother-firstGenPage {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-left: 4px;
+  }
+  /* responsive of top end here */
   .grand {
     padding: 15px;
   }
@@ -549,6 +578,12 @@ footer p {
   }
   .rowOne {
     flex-direction: column;
+  }
+  .camacho-siblings {
+    width: 340px;
+  }
+  .saavedra-siblings {
+    width: 340px;
   }
   footer a {
     font-size: 12px;

@@ -2,7 +2,17 @@
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  background: hsl(196, 79%, 61%);
+  margin: 0;
+}
 header {
+  position: fixed;
+  width: 100%;
   gap: 50px;
   padding: 5px 0;
   background-color: rgb(6, 58, 245);
@@ -157,6 +167,12 @@ footer p {
 }
 /* media screen */
 @media screen and (max-width: 428px) {
+  header {
+    z-index: 1000;
+  }
+  .secondGen-container {
+    padding-top: 80px;
+  }
   .secondGen-parents {
     padding-top: 200px;
     display: flex;
@@ -168,9 +184,9 @@ footer p {
 
   .secondGen-banner {
     position: absolute;
-    width: 300px;
+    width: 280px;
     top: 0;
-    left: 20px;
+    left: 24px;
   }
 
   .secondGen-children {
@@ -178,6 +194,14 @@ footer p {
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+  }
+  footer a {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  footer p {
+    font-size: 10px;
+    color: white;
   }
 }
 
