@@ -50,6 +50,7 @@ header a {
 /* main start here */
 .mother,
 .father {
+  background: #ffffff;
   border-radius: 10px;
   width: 150px;
   box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
@@ -65,7 +66,7 @@ header a {
 }
 
 .gasilla-container {
-  padding: 40px 20px;
+  padding: 100px 20px;
 }
 .gasilla-parents {
   display: flex;
@@ -77,14 +78,16 @@ header a {
   border-radius: 20px;
   color: white;
   background-color: rgb(236, 45, 83);
-  padding: 20px 50px;
+  padding: 40px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
 }
 .banner-title {
   text-align: center;
+  margin-bottom: 20px;
 }
 .familyHead {
   text-align: center;
@@ -101,6 +104,7 @@ span {
   gap: 20px;
 }
 .child {
+  background: lightcyan;
   border-radius: 10px;
   width: 150px;
   box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
@@ -115,10 +119,20 @@ span {
 }
 .childName {
   text-align: center;
+  margin: 20px 5px 15px 5px;
 }
 img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border: 1px solid #ffffff;
+  transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: -10px 8px 8px rgba(5, 222, 238, 0.8);
 }
 .img-holder {
   display: flex;

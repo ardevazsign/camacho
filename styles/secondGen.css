@@ -11,6 +11,7 @@ body {
   margin: 0;
 }
 header {
+  z-index: 1000;
   position: fixed;
   width: 100%;
   gap: 50px;
@@ -62,6 +63,7 @@ img {
 }
 .secondGen-banner {
   border-radius: 20px;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.5);
 }
 .banner-title {
   font-size: 24px;
@@ -71,7 +73,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 100px 0 50px 0;
 }
 .secondGen-parents {
   display: flex;
@@ -92,6 +94,7 @@ img {
 }
 .father,
 .mother {
+  background-color: #ffffff;
   box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.5);
   width: 165px;
   height: 215px;
@@ -99,7 +102,7 @@ img {
 }
 .father:hover,
 .mother:hover {
-  background-color: darkslategrey;
+  background-color: gray;
   cursor: pointer;
   color: #ffffff;
 }
@@ -118,7 +121,7 @@ img {
 .childName {
   text-align: center;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 .addInfo {
@@ -255,4 +258,40 @@ footer p {
     margin-bottom: 50px;
     gap: 60px;
   }
+}
+
+/* special picture */
+.couple-picture {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  background: #1050f3;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.family-picture {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  background: #1050f3;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.image-picture {
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+.image-picture:hover {
+  border-radius: 10px;
+  transform: scale(1.2);
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.images-secondGen {
+  transition: transform 0.5s ease-in-out;
+}
+.images-secondGen:hover {
+  border-radius: 20px;
+  transform: scale(1.2);
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.5);
 }
