@@ -140,6 +140,7 @@ header a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
 }
 .grandGrand {
   padding: 30px;
@@ -153,6 +154,7 @@ header a {
 }
 .grand-h3 {
   font-size: 24px;
+  margin: 10px;
 }
 .grandFather {
   cursor: pointer;
@@ -164,7 +166,7 @@ header a {
   align-items: center;
   display: flex;
   border: 1px solid black;
-  box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
 }
 .grandFather-firstGenPage {
   background-color: blue;
@@ -176,7 +178,7 @@ header a {
   height: 220px;
   border-radius: 20px;
   border: 1px solid whitesmoke;
-  box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
 }
 .grandMother {
   background-color: gray;
@@ -199,7 +201,7 @@ header a {
   display: flex;
   border-radius: 20px;
   border: 1px solid whitesmoke;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.8);
 }
 
 .children {
@@ -264,8 +266,8 @@ header a {
   text-align: center;
   justify-content: center;
   font-weight: 500;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background-color: royalblue;
   box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
@@ -280,8 +282,8 @@ header a {
 }
 .in-law:hover {
   background-color: grey;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   color: black;
   border-radius: 50%;
   box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
