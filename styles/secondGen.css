@@ -284,6 +284,8 @@ footer p {
 }
 .family-picture {
   cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   width: 300px;
   height: 200px;
