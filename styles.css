@@ -220,6 +220,7 @@ header a {
 }
 .child {
   font-weight: 600;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;

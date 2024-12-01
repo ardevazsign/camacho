@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+/* header */
+
+header {
+  position: fixed;
+  top: 0;
+  gap: 50px;
+  width: 100%;
+  height: 40px;
+  padding: 10px 0;
+  background-color: rgb(6, 58, 245);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+header a {
+  color: white;
+}
+.headTitle {
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.headTitle-firstGen {
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+.back {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: gainsboro;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+}
+.back:hover {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+
+/* header */
+.legal-title {
+  color: black;
+}
+.title-notice {
+  color: rgb(29, 27, 27);
+  background-color: yellow;
+  padding: 10px;
+}
+.messageh2 {
+  text-align: center;
+  color: rgb(29, 27, 27);
+  background-color: yellow;
+  padding: 10px;
+}
+h3 {
+  color: rgb(29, 27, 27);
+}
+
+main {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.main-letter {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 50px 60px;
+  width: 500px;
+  background-color: whitesmoke;
+  color: darkslategray;
+}
+.para-one {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  text-indent: 50px;
+  text-align: justify;
+}
+.para {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  margin: 5px 0;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(6, 6, 152);
+  letter-spacing: 0.6;
+}
+
+/* footer */
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 58, 245);
+}
+
+footer a {
+  font-family: "Franklin Gothic Medium", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+footer p {
+  color: white;
+}
+
+/* footer */
+
+@media screen and (max-width: 428px) {
+  .main-letter {
+    padding: 25px;
+    width: 280px;
+  }
+  .legal-title {
+    color: black;
+  }
+  .title-notice {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(29, 27, 27);
+    background-color: yellow;
+    padding: 10px;
+  }
+  .messageh2 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(29, 27, 27);
+    background-color: yellow;
+    padding: 10px;
+  }
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(29, 27, 27);
+  }
+
+  .para-one {
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+    text-indent: 30px;
+    text-align: justify;
+  }
+  .para {
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    margin: 5px 0;
+  }
+  h4 {
+    font-size: 16px;
+    color: rgb(6, 6, 152);
+  }
+
+  footer a {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  footer p {
+    font-size: 10px;
+    color: white;
+  }
+}
