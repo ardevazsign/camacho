@@ -151,6 +151,7 @@ header a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: -10px 8px 8px rgba(0, 0, 0, 0.8);
 }
 .grand-h3 {
   font-size: 24px;
@@ -397,7 +398,8 @@ header a {
 
 footer a {
   font-family: "Franklin Gothic Medium", sans-serif;
-  color: black;
+  text-decoration: none;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
 }
@@ -540,7 +542,7 @@ footer p {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-bottom: 280px;
+    padding-bottom: 350px;
   }
   .grand {
     position: absolute;

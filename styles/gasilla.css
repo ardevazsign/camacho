@@ -208,11 +208,12 @@ footer p {
   }
 
   .family-banner {
+    padding: 20px 30px;
     position: absolute;
-    width: 280px;
+    width: 240px;
     height: 120px;
     top: -5%;
-    left: -2%;
+    left: 1.5%;
   }
 
   .gasilla-children {
