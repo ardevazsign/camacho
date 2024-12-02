@@ -10,6 +10,7 @@ body {
   background: hsl(196, 79%, 61%);
   margin: 0;
 }
+/* header */
 header {
   z-index: 1000;
   position: fixed;
@@ -24,6 +25,8 @@ header {
 header a {
   color: white;
 }
+
+/* header */
 img {
   border: 1px solid #ffffff;
   border-top-left-radius: 10px;
