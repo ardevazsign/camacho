@@ -563,10 +563,14 @@ footer p {
     padding-bottom: 350px;
   }
   .grand {
+    padding-top: 20px;
     position: absolute;
     top: 0;
     width: 280px;
     height: 150px;
+  }
+  .legalButton {
+    margin-bottom: 20px;
   }
   .grandGrand {
     position: absolute;
@@ -587,9 +591,10 @@ footer p {
   }
   /* responsive of top end here */
   .grand {
-    padding: 15px;
+    padding: 30px;
   }
   .grand-h3 {
+    margin-top: 20px;
     font-size: 20px;
   }
   .rowThree {
