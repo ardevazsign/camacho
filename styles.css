@@ -563,7 +563,7 @@ footer p {
     padding-bottom: 350px;
   }
   .grand {
-    padding-top: 20px;
+    padding-top: 30px;
     position: absolute;
     top: 0;
     width: 280px;
@@ -590,11 +590,11 @@ footer p {
     margin-left: 4px;
   }
   /* responsive of top end here */
-  .grand {
+  /* .grand {
     padding: 30px;
-  }
+  } */
   .grand-h3 {
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: 20px;
   }
   .rowThree {
